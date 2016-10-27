@@ -8,6 +8,6 @@ import org.apache.thrift.TException;
  */
 public class HelloServiceImpl  implements HelloService.Iface{
     public void sayHello() throws TException {
-        System.out.println("hello world!");
+        System.out.println("hello world! 我陈宫了");
     }
 }

@@ -15,10 +15,10 @@ import org.slf4j.LoggerFactory;
 import java.net.InetSocketAddress;
 
 /**
- * 对象池,thrift-client for spring
- * Created by chenshunyang on 2016/10/21.
+ * 连接池,thrift-client for spring
  */
 public class ThriftClientPoolFactory extends BasePoolableObjectFactory<TServiceClient> {
+
     private Logger logger = LoggerFactory.getLogger(getClass());
 
     private final ThriftServerAddressProvider serverAddressProvider;
@@ -41,30 +41,8 @@ public class ThriftClientPoolFactory extends BasePoolableObjectFactory<TServiceC
         // 销毁client之前执行
         void destroy(TServiceClient client);
 
-        // 创建成功时执行
+        // 创建成功是执行
         void make(TServiceClient client);
-    }
-
-    @Override
-    public TServiceClient makeObject() throws Exception {
-        InetSocketAddress address = serverAddressProvider.selector();
-        if (address == null){
-            logger.error("从zk中获取的到服务端的地址为空");
-            throw new ThriftException("从zk中获取的到服务端的地址为空");
-        }
-        TSocket tsocket = new TSocket(address.getHostName(), address.getPort());
-        TTransport transport = new TFramedTransport(tsocket);
-        TProtocol protocol = new TBinaryProtocol(transport);
-        TServiceClient client = this.clientFactory.getClient(protocol);
-        transport.open();
-        if (callback != null) {
-            try {
-                callback.make(client);
-            } catch (Exception e) {
-                logger.warn("makeObject:{}", e);
-            }
-        }
-        return client;
     }
 
     @Override
@@ -99,4 +77,26 @@ public class ThriftClientPoolFactory extends BasePoolableObjectFactory<TServiceC
         logger.info("validateObject output:{}", pout.isOpen());
         return pin.isOpen() && pout.isOpen();
     }
+
+    @Override
+    public TServiceClient makeObject() throws Exception {
+        InetSocketAddress address = serverAddressProvider.selector();
+        if(address==null){
+            new ThriftException("No provider available for remote service");
+        }
+        TSocket tsocket = new TSocket(address.getHostName(), address.getPort());
+        TTransport transport = new TFramedTransport(tsocket);
+        TProtocol protocol = new TBinaryProtocol(transport);
+        TServiceClient client = this.clientFactory.getClient(protocol);
+        transport.open();
+        if (callback != null) {
+            try {
+                callback.make(client);
+            } catch (Exception e) {
+                logger.warn("makeObject:{}", e);
+            }
+        }
+        return client;
+    }
+
 }

@@ -4,24 +4,27 @@ import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.imps.CuratorFrameworkState;
 import org.apache.curator.framework.recipes.cache.ChildData;
 import org.apache.curator.framework.recipes.cache.PathChildrenCache;
+import org.apache.curator.framework.recipes.cache.PathChildrenCache.StartMode;
 import org.apache.curator.framework.recipes.cache.PathChildrenCacheEvent;
 import org.apache.curator.framework.recipes.cache.PathChildrenCacheListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
 
+import java.io.Closeable;
 import java.net.InetSocketAddress;
 import java.util.*;
+import java.util.concurrent.CountDownLatch;
 
 /**
  * 使用zookeeper作为"config"中心,使用apache-curator方法库来简化zookeeper开发
- * Created by chenshunyang on 2016/10/21.
  */
-public class ThriftServerAddressProviderZookeeper implements ThriftServerAddressProvider,InitializingBean{
+public class ThriftServerAddressProviderZookeeper implements ThriftServerAddressProvider, InitializingBean ,Closeable{
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
-    private CuratorFramework zkClient;
+    private CountDownLatch countDownLatch= new CountDownLatch(1);
+
     // 注册服务
     private String service;
     // 服务版本号
@@ -29,7 +32,10 @@ public class ThriftServerAddressProviderZookeeper implements ThriftServerAddress
 
     private PathChildrenCache cachedPath;
 
-    // 用来保存当前provider所接触过的地址记录,当zookeeper集群故障时,可以使用trace中地址,作为"备份"
+    private CuratorFramework zkClient;
+
+    // 用来保存当前provider所接触过的地址记录
+    // 当zookeeper集群故障时,可以使用trace中地址,作为"备份"
     private Set<String> trace = new HashSet<String>();
 
     private final List<InetSocketAddress> container = new ArrayList<InetSocketAddress>();
@@ -41,19 +47,6 @@ public class ThriftServerAddressProviderZookeeper implements ThriftServerAddress
     // 默认权重
     private static final Integer DEFAULT_WEIGHT = 1;
 
-
-    public ThriftServerAddressProviderZookeeper() {
-    }
-
-    public ThriftServerAddressProviderZookeeper(CuratorFramework zkClient) {
-        this.zkClient = zkClient;
-    }
-
-
-    public void setZkClient(CuratorFramework zkClient) {
-        this.zkClient = zkClient;
-    }
-
     public void setService(String service) {
         this.service = service;
     }
@@ -62,42 +55,15 @@ public class ThriftServerAddressProviderZookeeper implements ThriftServerAddress
         this.version = version;
     }
 
-    @Override
-    public String getService() {
-        return service;
+    public ThriftServerAddressProviderZookeeper() {
     }
 
-    @Override
-    public List<InetSocketAddress> findServerAddressList() {
-        return Collections.unmodifiableList(container);
+    public ThriftServerAddressProviderZookeeper(CuratorFramework zkClient) {
+        this.zkClient = zkClient;
     }
 
-    @Override
-    public synchronized  InetSocketAddress selector() {
-        if (inner.isEmpty()) {
-            if (!container.isEmpty()) {
-                inner.addAll(container);
-            } else if (!trace.isEmpty()) {
-                synchronized (lock) {
-                    for (String hostname : trace) {
-                        container.addAll(transfer(hostname));
-                    }
-                    Collections.shuffle(container);
-                    inner.addAll(container);
-                }
-            }
-        }
-        return inner.poll();
-    }
-
-    @Override
-    public void close() {
-        try {
-            cachedPath.close();
-            zkClient.close();
-        } catch (Exception e) {
-
-        }
+    public void setZkClient(CuratorFramework zkClient) {
+        this.zkClient = zkClient;
     }
 
     @Override
@@ -107,13 +73,16 @@ public class ThriftServerAddressProviderZookeeper implements ThriftServerAddress
             zkClient.start();
         }
         buildPathChildrenCache(zkClient, getServicePath(), true);
-        cachedPath.start(PathChildrenCache.StartMode.POST_INITIALIZED_EVENT);
+        cachedPath.start(StartMode.POST_INITIALIZED_EVENT);
+        countDownLatch.await();
     }
 
-    private void buildPathChildrenCache(final CuratorFramework client, String path, boolean cacheData) {
+    private String getServicePath(){
+        return "/" + service + "/" + version;
+    }
+    private void buildPathChildrenCache(final CuratorFramework client, String path, Boolean cacheData) throws Exception {
         cachedPath = new PathChildrenCache(client, path, cacheData);
-        cachedPath.getListenable().addListener(new PathChildrenCacheListener(){
-
+        cachedPath.getListenable().addListener(new PathChildrenCacheListener() {
             @Override
             public void childEvent(CuratorFramework client, PathChildrenCacheEvent event) throws Exception {
                 PathChildrenCacheEvent.Type eventType = event.getType();
@@ -127,15 +96,19 @@ public class ThriftServerAddressProviderZookeeper implements ThriftServerAddress
                     case CONNECTION_LOST:
                         logger.warn("Connection error,waiting...");
                         return;
+                    case INITIALIZED:
+                        //	countDownLatch.countDown();
+                        logger.warn("Connection init ...");
                     default:
                         //
                 }
                 // 任何节点的时机数据变动,都会rebuild,此处为一个"简单的"做法.
                 cachedPath.rebuild();
                 rebuild();
+                countDownLatch.countDown();
             }
 
-            private void rebuild() throws Exception{
+            protected void rebuild() throws Exception {
                 List<ChildData> children = cachedPath.getCurrentData();
                 if (children == null || children.isEmpty()) {
                     // 有可能所有的thrift server都与zookeeper断开了链接
@@ -165,13 +138,7 @@ public class ThriftServerAddressProviderZookeeper implements ThriftServerAddress
 
                 }
             }
-
-
         });
-    }
-
-    private String getServicePath() {
-        return "/" + service + "/" + version;
     }
 
     private List<InetSocketAddress> transfer(String address) {
@@ -189,4 +156,42 @@ public class ThriftServerAddressProviderZookeeper implements ThriftServerAddress
         }
         return result;
     }
+
+    @Override
+    public List<InetSocketAddress> findServerAddressList() {
+        return Collections.unmodifiableList(container);
+    }
+
+    @Override
+    public synchronized InetSocketAddress selector() {
+        if (inner.isEmpty()) {
+            if (!container.isEmpty()) {
+                inner.addAll(container);
+            } else if (!trace.isEmpty()) {
+                synchronized (lock) {
+                    for (String hostname : trace) {
+                        container.addAll(transfer(hostname));
+                    }
+                    Collections.shuffle(container);
+                    inner.addAll(container);
+                }
+            }
+        }
+        return inner.poll();
+    }
+
+    @Override
+    public void close() {
+        try {
+            cachedPath.close();
+            zkClient.close();
+        } catch (Exception e) {
+        }
+    }
+
+    @Override
+    public String getService() {
+        return service;
+    }
+
 }

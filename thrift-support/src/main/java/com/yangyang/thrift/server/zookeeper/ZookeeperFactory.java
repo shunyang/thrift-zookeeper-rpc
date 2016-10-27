@@ -62,7 +62,7 @@ public class ZookeeperFactory implements FactoryBean<CuratorFramework>{
         if (namespace == null || namespace == ""){
             namespace = ROOT;
         }else {
-            namespace = namespace+"/"+ROOT;
+            namespace = ROOT+"/"+namespace;
         }
         return create(zkHosts, sessionTimeout, connectionTimeout, namespace);
     }

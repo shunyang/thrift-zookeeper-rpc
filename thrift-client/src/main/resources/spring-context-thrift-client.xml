@@ -18,18 +18,18 @@
 		<property name="singleton" value="true" />
 	</bean>
 
-	<!--<bean id="smartService" class="com.yangyang.thrift.server.ThriftServiceClientProxyFactory"-->
-		<!--destroy-method="close">-->
-		<!--<property name="maxActive" value="5" />-->
-		<!--<property name="idleTime" value="1800000" />-->
-		<!--<property name="serverAddressProvider">-->
-			<!--<bean class="com.yangyang.thrift.server.zookeeper.ThriftServerAddressProviderZookeeper">-->
-				<!--<property name="service" value="com.yangyang.thrift.service.api.SmartService" />-->
-				<!--<property name="version" value="1.0.0" />-->
-				<!--<property name="zkClient" ref="thriftZookeeper" />-->
-			<!--</bean>-->
-		<!--</property>-->
-	<!--</bean>-->
+	<bean id="smartService" class="com.yangyang.thrift.server.ThriftServiceClientProxyFactory"
+		destroy-method="close">
+		<property name="maxActive" value="5" />
+		<property name="idleTime" value="1800000" />
+		<property name="serverAddressProvider">
+			<bean class="com.yangyang.thrift.server.zookeeper.ThriftServerAddressProviderZookeeper">
+				<property name="service" value="com.yangyang.thrift.service.api.SmartService" />
+				<property name="version" value="1.0.0" />
+				<property name="zkClient" ref="thriftZookeeper" />
+			</bean>
+		</property>
+	</bean>
 
 	<bean id="helloService" class="com.yangyang.thrift.server.ThriftServiceClientProxyFactory"
 		destroy-method="close">
