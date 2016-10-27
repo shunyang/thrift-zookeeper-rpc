@@ -48,6 +48,10 @@ public class ThriftClientPoolFactory extends BasePoolableObjectFactory<TServiceC
     @Override
     public TServiceClient makeObject() throws Exception {
         InetSocketAddress address = serverAddressProvider.selector();
+        if (address == null){
+            logger.error("从zk中获取的到服务端的地址为空");
+            throw new ThriftException("从zk中获取的到服务端的地址为空");
+        }
         TSocket tsocket = new TSocket(address.getHostName(), address.getPort());
         TTransport transport = new TFramedTransport(tsocket);
         TProtocol protocol = new TBinaryProtocol(transport);
