@@ -4,7 +4,7 @@ import java.net.InetSocketAddress;
 import java.util.List;
 
 /**
- * thrift server-service地址提供者,以便构建客户端连接池
+ * 获取服务地址接口
  * Created by chenshunyang on 2016/10/21.
  */
 public interface ThriftServerAddressProvider {

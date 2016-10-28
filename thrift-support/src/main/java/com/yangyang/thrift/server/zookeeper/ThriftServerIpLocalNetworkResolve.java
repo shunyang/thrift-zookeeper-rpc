@@ -10,6 +10,7 @@ import java.net.SocketException;
 import java.util.Enumeration;
 
 /**
+ * 基于网卡获取IP地址
  * Created by chenshunyang on 2016/10/21.
  */
 public class ThriftServerIpLocalNetworkResolve implements ThriftServerIpResolve{

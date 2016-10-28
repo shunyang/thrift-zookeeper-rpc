@@ -12,22 +12,18 @@ import org.springframework.beans.factory.InitializingBean;
 
 import java.io.Closeable;
 import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
- * 客户端代理
+ * 客户端代理工厂
  */
-@SuppressWarnings({ "unchecked", "rawtypes" })
 public class ThriftServiceClientProxyFactory implements FactoryBean, InitializingBean,Closeable {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
     private Integer maxActive = 32;// 最大活跃连接数
 
-    // ms,default 3 min,链接空闲时间
-    // -1,关闭空闲检测
-    private Integer idleTime = 180000;
+    private Integer idleTime = 180000;// ms,default 3 min,链接空闲时间, -1,关闭空闲检测
     private ThriftServerAddressProvider serverAddressProvider;
 
     private Object proxyClient;
@@ -67,29 +63,32 @@ public class ThriftServiceClientProxyFactory implements FactoryBean, Initializin
         // 加载Client.Factory类
         Class<TServiceClientFactory<TServiceClient>> fi = (Class<TServiceClientFactory<TServiceClient>>) classLoader.loadClass(serverAddressProvider.getService() + "$Client$Factory");
         TServiceClientFactory<TServiceClient> clientFactory = fi.newInstance();
-        ThriftClientPoolFactory clientPool = new ThriftClientPoolFactory(serverAddressProvider, clientFactory, callback);
 
+        ThriftClientPoolFactory clientPool = new ThriftClientPoolFactory(serverAddressProvider, clientFactory, callback);
         pool = new GenericObjectPool<TServiceClient>(clientPool, makePoolConfig());
-        proxyClient = Proxy.newProxyInstance(classLoader, new Class[] { objectClass }, new InvocationHandler() {
-            @Override
-            public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-                //
-                TServiceClient client = pool.borrowObject();
-                boolean flag = true;
-                try {
-                    return method.invoke(client, args);
-                } catch (Exception e) {
-                    flag = false;
-                    throw e;
-                } finally {
-                    if(flag){
-                        pool.returnObject(client);
-                    }else{
-                        pool.invalidateObject(client);
-                    }
-                }
-            }
-        });
+
+//        InvocationHandler handler = makeProxyHandler();//方式1
+        InvocationHandler handler = makeProxyHandler2();//方式2
+        proxyClient = Proxy.newProxyInstance(classLoader, new Class[] { objectClass }, handler);
+    }
+
+    private InvocationHandler makeProxyHandler() throws Exception{
+        ThriftServiceClient2Proxy handler = null;
+        TServiceClient client = pool.borrowObject();
+        try {
+            handler = new ThriftServiceClient2Proxy(client);
+            pool.returnObject(client);
+        }catch (Exception e){
+            pool.invalidateObject(client);
+            throw new ThriftException("获取代理对象失败");
+        }
+        return handler;
+    }
+
+
+    private InvocationHandler makeProxyHandler2() throws Exception{
+        ThriftServiceClientProxy handler = new ThriftServiceClientProxy(pool);
+        return handler;
     }
 
     private GenericObjectPool.Config  makePoolConfig() {

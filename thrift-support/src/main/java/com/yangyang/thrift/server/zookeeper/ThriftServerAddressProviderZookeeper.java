@@ -17,25 +17,25 @@ import java.util.*;
 import java.util.concurrent.CountDownLatch;
 
 /**
+ * @author chenshunyang
  * 使用zookeeper作为"config"中心,使用apache-curator方法库来简化zookeeper开发
  */
 public class ThriftServerAddressProviderZookeeper implements ThriftServerAddressProvider, InitializingBean ,Closeable{
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
-    private CountDownLatch countDownLatch= new CountDownLatch(1);
-
     // 注册服务
     private String service;
     // 服务版本号
     private String version = "1.0.0";
+    //zk客户端
+    private CuratorFramework zkClient;
+
+    private CountDownLatch countDownLatch= new CountDownLatch(1);//避免 zk还没有连接上，就去调用服务
 
     private PathChildrenCache cachedPath;
 
-    private CuratorFramework zkClient;
-
-    // 用来保存当前provider所接触过的地址记录
-    // 当zookeeper集群故障时,可以使用trace中地址,作为"备份"
+    // 用来保存当前provider所接触过的地址记录，当zookeeper集群故障时,可以使用trace中地址,作为"备份"
     private Set<String> trace = new HashSet<String>();
 
     private final List<InetSocketAddress> container = new ArrayList<InetSocketAddress>();
@@ -55,6 +55,10 @@ public class ThriftServerAddressProviderZookeeper implements ThriftServerAddress
         this.version = version;
     }
 
+    public void setZkClient(CuratorFramework zkClient) {
+        this.zkClient = zkClient;
+    }
+
     public ThriftServerAddressProviderZookeeper() {
     }
 
@@ -62,9 +66,6 @@ public class ThriftServerAddressProviderZookeeper implements ThriftServerAddress
         this.zkClient = zkClient;
     }
 
-    public void setZkClient(CuratorFramework zkClient) {
-        this.zkClient = zkClient;
-    }
 
     @Override
     public void afterPropertiesSet() throws Exception {
