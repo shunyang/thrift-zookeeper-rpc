@@ -1,4 +1,4 @@
-namespace java com.yangyang.thrift.service.struct
+namespace java com.yangyang.thrift.api.struct
 
 
 struct User{

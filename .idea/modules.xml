@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/thrift-client/thrift-client.iml" filepath="$PROJECT_DIR$/thrift-client/thrift-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/thrift-server/thrift-server.iml" filepath="$PROJECT_DIR$/thrift-server/thrift-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/thrift-support/thrift-support.iml" filepath="$PROJECT_DIR$/thrift-support/thrift-support.iml" />
-      <module fileurl="file://$PROJECT_DIR$/thrift-zk.iml" filepath="$PROJECT_DIR$/thrift-zk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thrift-zookeeper-rpc.iml" filepath="$PROJECT_DIR$/thrift-zookeeper-rpc.iml" />
     </modules>
   </component>
 </project>

@@ -7,22 +7,22 @@
 	default-lazy-init="false">
 
 	<!-- zookeeper -->
-	<bean id="thriftZookeeper" class="com.yangyang.thrift.server.zookeeper.ZookeeperFactory" destroy-method="close">
+	<bean id="thriftZookeeper" class="com.yangyang.thrift.rpc.zookeeper.ZookeeperFactory" destroy-method="close">
 		<property name="zkHosts" value="127.0.0.1:2181"/>
-		<property name="namespace" value="com.yangyang.thrift.server" />
+		<property name="namespace" value="com.yangyang.thrift.rpc" />
 		<property name="connectionTimeout" value="3000" />
 		<property name="sessionTimeout" value="3000" />
 		<property name="singleton" value="true" />
 	</bean>
 	<bean id="serviceAddressRegister"
-		class="com.yangyang.thrift.server.zookeeper.ThriftServerAddressRegisterZookeeper" destroy-method="close">
+          class="com.yangyang.thrift.rpc.zookeeper.ThriftServerAddressRegisterZookeeper" destroy-method="close">
 		<property name="zkClient" ref="thriftZookeeper" />
 	</bean>
 
-	<bean id="smartService" class="com.yangyang.thrift.service.impl.SmartServiceImpl"/>
-	<bean id="helloService" class="com.yangyang.thrift.service.impl.HelloServiceImpl"/>
+	<bean id="smartService" class="com.yangyang.thrift.server.service.SmartServiceImpl"/>
+	<bean id="helloService" class="com.yangyang.thrift.server.service.HelloServiceImpl"/>
 
-	<bean  class="com.yangyang.thrift.server.ThriftServiceServerFactory"
+	<bean  class="com.yangyang.thrift.rpc.ThriftServiceServerFactory"
 		destroy-method="close">
 		<property name="service" ref="smartService" />
 		<property name="port" value="9000" />
@@ -31,7 +31,7 @@
 		<property name="thriftServerAddressRegister" ref="serviceAddressRegister" />
 	</bean>
 	
-	<bean  class="com.yangyang.thrift.server.ThriftServiceServerFactory"
+	<bean  class="com.yangyang.thrift.rpc.ThriftServiceServerFactory"
 		destroy-method="close">
 		<property name="service" ref="helloService" />
 		<property name="port" value="9001" />

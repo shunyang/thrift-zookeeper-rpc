@@ -1,4 +1,4 @@
-namespace java com.yangyang.thrift.service.api
+namespace java com.yangyang.thrift.api
 
 service HelloService{
 

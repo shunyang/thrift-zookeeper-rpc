@@ -9,35 +9,35 @@
 	default-lazy-init="false">
 
 	<!-- zookeeper -->
-	<bean id="thriftZookeeper" class="com.yangyang.thrift.server.zookeeper.ZookeeperFactory"
+	<bean id="thriftZookeeper" class="com.yangyang.thrift.rpc.zookeeper.ZookeeperFactory"
 		destroy-method="close">
 		<property name="zkHosts" value="127.0.0.1:2181" />
-		<property name="namespace" value="com.yangyang.thrift.server"/>
+		<property name="namespace" value="com.yangyang.thrift.rpc"/>
 		<property name="connectionTimeout" value="3000" />
 		<property name="sessionTimeout" value="3000" />
 		<property name="singleton" value="true" />
 	</bean>
 
-	<bean id="smartService" class="com.yangyang.thrift.server.ThriftServiceClientProxyFactory"
+	<bean id="smartService" class="com.yangyang.thrift.rpc.ThriftServiceClientProxyFactory"
 		destroy-method="close">
 		<property name="maxActive" value="5" />
 		<property name="idleTime" value="1800000" />
 		<property name="serverAddressProvider">
-			<bean class="com.yangyang.thrift.server.zookeeper.ThriftServerAddressProviderZookeeper">
-				<property name="service" value="com.yangyang.thrift.service.api.SmartService" />
+			<bean class="com.yangyang.thrift.rpc.zookeeper.ThriftServerAddressProviderZookeeper">
+				<property name="service" value="com.yangyang.thrift.api.SmartService" />
 				<property name="version" value="1.0.0" />
 				<property name="zkClient" ref="thriftZookeeper" />
 			</bean>
 		</property>
 	</bean>
 
-	<bean id="helloService" class="com.yangyang.thrift.server.ThriftServiceClientProxyFactory"
+	<bean id="helloService" class="com.yangyang.thrift.rpc.ThriftServiceClientProxyFactory"
 		destroy-method="close">
 		<property name="maxActive" value="5" />
 		<property name="idleTime" value="1800000" />
 		<property name="serverAddressProvider">
-			<bean class="com.yangyang.thrift.server.zookeeper.ThriftServerAddressProviderZookeeper">
-				<property name="service" value="com.yangyang.thrift.service.api.HelloService" />
+			<bean class="com.yangyang.thrift.rpc.zookeeper.ThriftServerAddressProviderZookeeper">
+				<property name="service" value="com.yangyang.thrift.api.HelloService" />
 				<property name="version" value="1.0.0" />
 				<property name="zkClient" ref="thriftZookeeper" />
 			</bean>

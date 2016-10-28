@@ -2,12 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6181af2-a1d6-48ab-b013-ced282dc156d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_16_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_2_7_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_2_7_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_2_7_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_thrift_libthrift_0_9_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_0_9_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_0_9_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_0_9_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_0_9_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_0_9_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_0_9_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_9_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_0_9_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_0_9_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_0_9_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/thrift-zk.iml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-api/src/main/java/com/yangyang/thrift/service/api/HelloService.java" afterPath="$PROJECT_DIR$/thrift-api/src/main/java/com/yangyang/thrift/api/HelloService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-api/src/main/java/com/yangyang/thrift/service/api/SmartService.java" afterPath="$PROJECT_DIR$/thrift-api/src/main/java/com/yangyang/thrift/api/SmartService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-api/src/main/java/com/yangyang/thrift/service/struct/User.java" afterPath="$PROJECT_DIR$/thrift-api/src/main/java/com/yangyang/thrift/api/struct/User.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-server/src/main/java/com/yangyang/thrift/BootStrap.java" afterPath="$PROJECT_DIR$/thrift-server/src/main/java/com/yangyang/thrift/server/BootStrap.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-server/src/main/java/com/yangyang/thrift/service/impl/HelloServiceImpl.java" afterPath="$PROJECT_DIR$/thrift-server/src/main/java/com/yangyang/thrift/server/service/HelloServiceImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-server/src/main/java/com/yangyang/thrift/service/impl/SmartServiceImpl.java" afterPath="$PROJECT_DIR$/thrift-server/src/main/java/com/yangyang/thrift/server/service/SmartServiceImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftClientPoolFactory.java" afterPath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/ThriftClientPoolFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftException.java" afterPath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/ThriftException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftServiceClient2Proxy.java" afterPath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/ThriftServiceClient2Proxy.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftServiceClientProxy.java" afterPath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/ThriftServiceClientProxy.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftServiceClientProxyFactory.java" afterPath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/ThriftServiceClientProxyFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftServiceServerFactory.java" afterPath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/ThriftServiceServerFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressProvider.java" afterPath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/zookeeper/ThriftServerAddressProvider.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressProviderZookeeper.java" afterPath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/zookeeper/ThriftServerAddressProviderZookeeper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressRegister.java" afterPath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/zookeeper/ThriftServerAddressRegister.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressRegisterZookeeper.java" afterPath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/zookeeper/ThriftServerAddressRegisterZookeeper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerIpLocalNetworkResolve.java" afterPath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/zookeeper/ThriftServerIpLocalNetworkResolve.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerIpResolve.java" afterPath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/zookeeper/ThriftServerIpResolve.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ZookeeperFactory.java" afterPath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/zookeeper/ZookeeperFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftServiceClientProxyFactory.java" afterPath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftServiceClientProxyFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressProvider.java" afterPath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressProviderZookeeper.java" afterPath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressProviderZookeeper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerIpLocalNetworkResolve.java" afterPath="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerIpLocalNetworkResolve.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-api/pom.xml" afterPath="$PROJECT_DIR$/thrift-api/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-api/src/main/thrift/HelloService.thrift" afterPath="$PROJECT_DIR$/thrift-api/src/main/thrift/HelloService.thrift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-api/src/main/thrift/SmartService.thrift" afterPath="$PROJECT_DIR$/thrift-api/src/main/thrift/SmartService.thrift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-api/src/main/thrift/SmartTypes.thrift" afterPath="$PROJECT_DIR$/thrift-api/src/main/thrift/SmartTypes.thrift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-client/pom.xml" afterPath="$PROJECT_DIR$/thrift-client/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-client/src/main/java/com/yangyang/thrift/client/SmartServiceTest.java" afterPath="$PROJECT_DIR$/thrift-client/src/main/java/com/yangyang/thrift/client/SmartServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-client/src/main/resources/spring-context-thrift-client.xml" afterPath="$PROJECT_DIR$/thrift-client/src/main/resources/spring-context-thrift-client.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-client/thrift-client.iml" afterPath="$PROJECT_DIR$/thrift-client/thrift-client.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-server/pom.xml" afterPath="$PROJECT_DIR$/thrift-server/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-server/src/main/resources/spring-context-thrift-server.xml" afterPath="$PROJECT_DIR$/thrift-server/src/main/resources/spring-context-thrift-server.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/thrift-support/pom.xml" afterPath="$PROJECT_DIR$/thrift-support/pom.xml" />
     </list>
     <ignored path="thrift-zk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,98 +102,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="spring-context-thrift-client.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thrift-client/src/main/resources/spring-context-thrift-client.xml">
+      <file leaf-file-name="spring-context-thrift-server.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thrift-server/src/main/resources/spring-context-thrift-server.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="38" column="77" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
+            <state relative-caret-position="360">
+              <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThriftServiceClientProxyFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftServiceClientProxyFactory.java">
+      <file leaf-file-name="SmartServiceTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/thrift-client/src/main/java/com/yangyang/thrift/client/SmartServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="70" column="61" selection-start-line="70" selection-start-column="61" selection-end-line="70" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1241#1242#0" expanded="true" />
-                <element signature="e#1286#1287#0" expanded="true" />
-                <element signature="e#1358#1359#0" expanded="true" />
-                <element signature="e#1404#1405#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThriftServiceClientProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftServiceClientProxy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#505#506#0" expanded="true" />
-                <element signature="e#537#538#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThriftServerAddressProviderZookeeper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressProviderZookeeper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="166" column="45" selection-start-line="166" selection-start-column="45" selection-end-line="166" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2124#2125#0" expanded="true" />
-                <element signature="e#2164#2165#0" expanded="true" />
-                <element signature="e#6059#6060#0" expanded="true" />
-                <element signature="e#6121#6122#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThriftServerIpLocalNetworkResolve.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerIpLocalNetworkResolve.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-178">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="120">
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThriftServerAddressProvider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressProvider.java">
+      <file leaf-file-name="BootStrap.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thrift-server/src/main/java/com/yangyang/thrift/server/BootStrap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+            <state relative-caret-position="210">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThriftServerAddressRegister.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressRegister.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            <state relative-caret-position="90">
+              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
               <folding />
             </state>
           </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+            <state />
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="255">
-                <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+              <first_editor relative-caret-position="210">
+                <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -141,25 +158,65 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZookeeperFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ZookeeperFactory.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thrift-api/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+            <state relative-caret-position="75">
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thrift-client/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thrift-client.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thrift-client/thrift-client.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThriftClientPoolFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftClientPoolFactory.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thrift-support/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="82" column="58" selection-start-line="82" selection-start-column="58" selection-end-line="82" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <folding />
             </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thrift-server/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -184,29 +241,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/thrift-api/pom.xml" />
         <option value="$PROJECT_DIR$/thrift-api/src/main/thrift/service.thrift" />
-        <option value="$PROJECT_DIR$/thrift-api/src/main/thrift/HelloService.thrift" />
         <option value="$PROJECT_DIR$/thrift-api/src/main/thrift/SmartTypes.thrift" />
-        <option value="$PROJECT_DIR$/thrift-api/src/main/thrift/SmartService.thrift" />
         <option value="$PROJECT_DIR$/thrift-server/src/main/java/com/yangyang/thrift/BootStrap.java" />
-        <option value="$PROJECT_DIR$/thrift-server/pom.xml" />
         <option value="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressRegister.java" />
         <option value="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftException.java" />
         <option value="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressRegisterZookeeper.java" />
         <option value="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerIpResolve.java" />
         <option value="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftServiceServerFactory.java" />
         <option value="$PROJECT_DIR$/thrift-server/src/main/java/com/yangyang/thrift/service/impl/SmartServiceImpl.java" />
-        <option value="$PROJECT_DIR$/thrift-support/pom.xml" />
         <option value="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/PoolOperationCallBack.java" />
         <option value="$PROJECT_DIR$/thrift-server/src/main/resources/spring-context-thrift-server.xml" />
-        <option value="$PROJECT_DIR$/thrift-client/pom.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/thrift-server/src/main/java/com/yangyang/thrift/service/impl/HelloServiceImpl.java" />
         <option value="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ZookeeperFactory.java" />
         <option value="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftClientPoolFactory.java" />
-        <option value="$PROJECT_DIR$/thrift-client/src/main/resources/spring-context-thrift-client.xml" />
         <option value="$PROJECT_DIR$/thrift-client/src/main/java/com/yangyang/thrift/client/SmartServiceTest.java" />
         <option value="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftServiceClientProxy.java" />
         <option value="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftServiceClient2Proxy.java" />
@@ -215,6 +264,16 @@
         <option value="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerIpLocalNetworkResolve.java" />
         <option value="$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressProvider.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/thrift-client/src/main/resources/spring-context-thrift-client.xml" />
+        <option value="$PROJECT_DIR$/thrift-server/src/main/java/com/yangyang/thrift/server/BootStrap.java" />
+        <option value="$PROJECT_DIR$/thrift-api/src/main/java/com/yangyang/thrift/api/SmartService.java" />
+        <option value="$PROJECT_DIR$/thrift-api/src/main/thrift/SmartService.thrift" />
+        <option value="$PROJECT_DIR$/thrift-api/src/main/thrift/HelloService.thrift" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/thrift-api/pom.xml" />
+        <option value="$PROJECT_DIR$/thrift-client/pom.xml" />
+        <option value="$PROJECT_DIR$/thrift-server/pom.xml" />
+        <option value="$PROJECT_DIR$/thrift-support/pom.xml" />
       </list>
     </option>
   </component>
@@ -242,6 +301,29 @@
     <option name="width" value="1280" />
     <option name="height" value="709" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>Internationalization issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>WebSocket issues</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -267,33 +349,33 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -303,15 +385,29 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-support" />
+              <option name="myItemId" value="thrift-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thrift-server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -321,37 +417,15 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-support" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-support" />
+              <option name="myItemId" value="thrift-server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -362,26 +436,18 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-support" />
+              <option name="myItemId" value="thrift-server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -400,18 +466,14 @@
               <option name="myItemId" value="server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zookeeper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -421,11 +483,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -439,11 +501,33 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thrift-client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thrift-zookeeper-rpc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -459,29 +543,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-zk" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thrift-client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -491,12 +557,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../jpush/stat/portal-stat" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -513,11 +579,11 @@
     <configuration default="false" name="BootStrap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.yangyang.thrift.*" />
+          <option name="PATTERN" value="com.yangyang.thrift.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.yangyang.thrift.BootStrap" />
+      <option name="MAIN_CLASS_NAME" value="com.yangyang.thrift.server.BootStrap" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -553,11 +619,11 @@
     <configuration default="false" name="ThriftServerAddressProviderZookeeper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.yangyang.thrift.server.zookeeper.*" />
+          <option name="PATTERN" value="com.yangyang.thrift.rpc.zookeeper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.yangyang.thrift.server.zookeeper.ThriftServerAddressProviderZookeeper" />
+      <option name="MAIN_CLASS_NAME" value="com.yangyang.thrift.rpc.zookeeper.ThriftServerAddressProviderZookeeper" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -919,31 +985,33 @@
       <workItem from="1477303779106" duration="65000" />
       <workItem from="1477304134310" duration="52000" />
       <workItem from="1477397941537" duration="23018000" />
-      <workItem from="1477620930310" duration="3646000" />
+      <workItem from="1477620930310" duration="5831000" />
+      <workItem from="1477636866753" duration="1191000" />
+      <workItem from="1477638916500" duration="337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43771000" />
+    <option name="totallyTimeSpent" value="47484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24311183" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25121555" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21393842" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38897893" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25121555" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36953" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16074313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30371568" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -953,9 +1021,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.057350565" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.4951535" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -971,14 +1039,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressProviderZookeeper.java</url>
-          <line>159</line>
-          <properties />
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="34" />
     </breakpoint-manager>
     <watches-manager />
@@ -988,87 +1048,8 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/tools/maven/repo/org/springframework/spring-context/4.0.9.RELEASE/spring-context-4.0.9.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="1180" column="16" selection-start-line="1180" selection-start-column="16" selection-end-line="1180" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/tools/maven/repo/org/springframework/spring-context/4.0.9.RELEASE/spring-context-4.0.9.RELEASE-sources.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="100" column="39" selection-start-line="100" selection-start-column="39" selection-end-line="100" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/tools/maven/repo/org/apache/curator/curator-recipes/2.7.1/curator-recipes-2.7.1.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/tools/maven/repo/org/apache/curator/curator-framework/2.7.1/curator-framework-2.7.1.jar!/org/apache/curator/framework/CuratorFramework.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/tools/maven/repo/org/apache/curator/curator-framework/2.7.1/curator-framework-2.7.1.jar!/org/apache/curator/framework/imps/CuratorFrameworkState.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/tools/maven/repo/org/apache/curator/curator-framework/2.7.1/curator-framework-2.7.1.jar!/org/apache/curator/framework/imps/CreateBuilderImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="211" column="56" selection-start-line="211" selection-start-column="56" selection-end-line="211" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_71.jdk/Contents/Home/src.zip!/java/lang/RuntimeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftServerIpResolve.java" />
-    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerIpResolve.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-server/src/main/java/com/yangyang/thrift/service/impl/SmartServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/thrift-server/src/main/java/com/yangyang/thrift/server/service/SmartServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -1076,17 +1057,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thrift-client/src/main/java/SmartServiceTest.java" />
-    <entry file="file://$PROJECT_DIR$/thrift-support/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thrift-server/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1109,22 +1079,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/tools/maven/repo/org/apache/thrift/libthrift/0.9.3/libthrift-0.9.3-sources.jar!/org/apache/thrift/TServiceClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1139,54 +1097,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="355" column="20" selection-start-line="355" selection-start-column="20" selection-end-line="355" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#84031#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#10144#10145#0" expanded="false" />
-            <element signature="e#10181#10182#0" expanded="false" />
-            <element signature="e#11991#11992#0" expanded="false" />
-            <element signature="e#12045#12046#0" expanded="false" />
-            <element signature="e#12720#12721#0" expanded="false" />
-            <element signature="e#12790#12791#0" expanded="false" />
-            <element signature="e#37613#37614#0" expanded="false" />
-            <element signature="e#37645#37646#0" expanded="false" />
-            <element signature="e#40522#40523#0" expanded="false" />
-            <element signature="e#40559#40560#0" expanded="false" />
-            <element signature="e#43545#43575#1" expanded="false" />
-            <element signature="e#44333#44334#0" expanded="false" />
-            <element signature="e#44360#44361#0" expanded="false" />
-            <element signature="e#48242#48243#0" expanded="false" />
-            <element signature="e#48305#48306#0" expanded="false" />
-            <element signature="e#48352#48353#0" expanded="false" />
-            <element signature="e#48410#48411#0" expanded="false" />
-            <element signature="e#48553#48554#0" expanded="false" />
-            <element signature="e#48617#48618#0" expanded="false" />
-            <element signature="e#63089#63090#0" expanded="false" />
-            <element signature="e#63116#63117#0" expanded="false" />
-            <element signature="e#65863#65864#0" expanded="false" />
-            <element signature="e#65943#65944#0" expanded="false" />
-            <element signature="e#70343#70344#0" expanded="false" />
-            <element signature="e#70433#70434#0" expanded="false" />
-            <element signature="e#83489#83490#0" expanded="false" />
-            <element signature="e#83525#83526#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftException.java">
+    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/ThriftException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-          <folding>
-            <element signature="e#170#171#0" expanded="false" />
-            <element signature="e#193#194#0" expanded="false" />
-            <element signature="e#234#235#0" expanded="false" />
-            <element signature="e#260#261#0" expanded="false" />
-            <element signature="e#302#303#0" expanded="false" />
-            <element signature="e#326#327#0" expanded="false" />
-            <element signature="e#379#380#0" expanded="false" />
-            <element signature="e#407#408#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1232,64 +1149,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-server/src/main/java/com/yangyang/thrift/service/impl/HelloServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/thrift-server/src/main/java/com/yangyang/thrift/server/service/HelloServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-server/src/main/resources/spring-context-thrift-server.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-api/src/main/java/com/yangyang/thrift/service/api/HelloService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-api/src/main/java/com/yangyang/thrift/service/api/SmartService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-server/src/main/java/com/yangyang/thrift/BootStrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="90" selection-start-line="9" selection-start-column="90" selection-end-line="9" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-client/src/main/java/com/yangyang/thrift/client/SmartServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressRegisterZookeeper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#707#708#0" expanded="false" />
-            <element signature="e#747#748#0" expanded="false" />
-            <element signature="e#1606#1607#0" expanded="false" />
-            <element signature="e#1638#1639#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1357,131 +1220,270 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/ThriftServiceClient2Proxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/ThriftServiceClientProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/ThriftServiceClientProxyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="70" column="61" selection-start-line="70" selection-start-column="61" selection-end-line="70" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/ThriftClientPoolFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="82" column="58" selection-start-line="82" selection-start-column="58" selection-end-line="82" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/zookeeper/ThriftServerAddressRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/zookeeper/ThriftServerAddressProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-zookeeper-rpc.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/ThriftServiceServerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1605">
+          <caret line="128" column="18" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/zookeeper/ZookeeperFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/zookeeper/ThriftServerIpResolve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/zookeeper/ThriftServerIpLocalNetworkResolve.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/zookeeper/ThriftServerAddressRegisterZookeeper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_71.jdk/Contents/Home/src.zip!/java/util/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1770">
+          <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#27819#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#26270#26271#0" expanded="false" />
+            <element signature="e#26326#26327#0" expanded="false" />
+            <element signature="e#26957#26958#0" expanded="false" />
+            <element signature="e#27022#27023#0" expanded="false" />
+            <element signature="e#27751#27752#0" expanded="false" />
+            <element signature="e#27815#27816#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_71.jdk/Contents/Home/src.zip!/java/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="143" column="40" selection-start-line="143" selection-start-column="40" selection-end-line="143" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#8063#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/rpc/zookeeper/ThriftServerAddressProviderZookeeper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-api/src/main/java/com/yangyang/thrift/api/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftServiceClient2Proxy.java">
+    <entry file="file://$PROJECT_DIR$/thrift-api/src/main/java/com/yangyang/thrift/api/SmartService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftServiceServerFactory.java">
+    <entry file="file://$PROJECT_DIR$/thrift-api/src/main/thrift/SmartService.thrift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="128" column="18" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="18" />
-          <folding>
-            <element signature="e#4859#4860#0" expanded="true" />
-            <element signature="e#4900#4901#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftServiceClientProxy.java">
+    <entry file="file://$PROJECT_DIR$/thrift-api/src/main/thrift/HelloService.thrift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftServiceClientProxyFactory.java">
+    <entry file="file://$PROJECT_DIR$/thrift-api/src/main/thrift/SmartTypes.thrift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="70" column="61" selection-start-line="70" selection-start-column="61" selection-end-line="70" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1358#1359#0" expanded="true" />
-            <element signature="e#1404#1405#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thrift-client/src/main/resources/spring-context-thrift-client.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="38" column="77" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="77" />
+        <state relative-caret-position="480">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/ThriftClientPoolFactory.java">
+    <entry file="file://$PROJECT_DIR$/thrift-server/src/main/resources/spring-context-thrift-server.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="82" column="58" selection-start-line="82" selection-start-column="58" selection-end-line="82" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressProviderZookeeper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="166" column="45" selection-start-line="166" selection-start-column="45" selection-end-line="166" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2124#2125#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#6059#6060#0" expanded="true" />
-            <element signature="e#6121#6122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerIpLocalNetworkResolve.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-178">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="360">
+          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressRegister.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        <state relative-caret-position="90">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ThriftServerAddressProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/thrift-support/src/main/java/com/yangyang/thrift/server/zookeeper/ZookeeperFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
-          <folding />
-        </state>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="255">
-            <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+          <first_editor relative-caret-position="210">
+            <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-client/thrift-client.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-support/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-server/src/main/java/com/yangyang/thrift/server/BootStrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thrift-client/src/main/java/com/yangyang/thrift/client/SmartServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>

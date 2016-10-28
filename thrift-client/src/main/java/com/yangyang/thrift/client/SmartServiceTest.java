@@ -1,7 +1,7 @@
 package com.yangyang.thrift.client;
 
-import com.yangyang.thrift.service.api.HelloService;
-import com.yangyang.thrift.service.api.SmartService;
+import com.yangyang.thrift.api.HelloService;
+import com.yangyang.thrift.api.SmartService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
